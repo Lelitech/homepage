@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+}
+.sheet{
+    background-color: hsl(36, 100%, 99%);
+    
+
+}
+.header{
+    font-size: 30px;    
+}
+.sidebar{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 70%;
+    justify-content: space-around;
+    color: hsl(233, 8%, 79%);
+    
+}
+.container{
+    background-color: hsl(36, 100%, 99%);
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "one one two"
+                          "three four two"
+                          "five six seven";
+    padding: 0 50px 0 50px;
+    justify-content: center;
+
+}
+
+.puzzle{
+    grid-area: one;
+}
+
+.puzzle img{
+    width: 120vh;
+    height: 50vh;
+    padding: 20px;
+}
+
+
+.menu{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(240, 100%, 5%);
+    grid-area: two;
+    height: 80%;
+
+}
+.hydrogen h1{
+    color: hsl(35, 77%, 62%);
+}
+.menu h3{
+    color: white;
+}
+.menu p{
+    color:  hsl(233, 8%, 79%);    
+}
+.bold{
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: three;
+}
+
+.more{
+    color: hsl(233, 8%, 79%);
+    grid-area: four;
+}
+
+.bottom{
+     display: flex;
+}
+.retro{
+    display: flex;
+    grid-area: five;
+}
+.retro img{
+    width: 200px;
+    height: 200px;
+}
+.rinfo h3{
+    color: hsl(233, 8%, 79%);
+    font-size: 30px;   
+}
+.laptop{
+    display: flex;
+    grid-area: six;
+}
+.laptop img{
+    width: 200px;
+    height: 200px;
+}
+.linfo h3{
+    color: hsl(233, 8%, 79%);
+    font-size: 40px;
+}
+.game{
+    display: flex;
+    grid-area: seven;
+}
+.game img{
+    width: 200px;
+    height: 200px;
+}
+.ginfo h3{
+    color: hsl(233, 8%, 79%);
+    font-size: 40px;
+}
